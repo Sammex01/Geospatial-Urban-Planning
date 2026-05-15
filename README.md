@@ -22,7 +22,11 @@ df_activities['Coordinates'] = df_activities['Polyline'].apply(polyline.decode)
 heat_data = [[row['Latitude'], row['Longitude']] for index, row in df_routes.iterrows()]
 HeatMap(heat_data, radius=25, blur=15).add_to(city_map)
 ```
-View map here: [city_infrastructure_heatmap.html](city_infrastructure_heatmap2.html)
+## MAP
+
+![Static Map](Screenshot.png)
+
+[View interactive map here](https://sammex01.github.io/Geospatial-Urban-Planning/city_infrastructure_heatmap2.html)
 
 ### 💡 Key Takeaways
 
